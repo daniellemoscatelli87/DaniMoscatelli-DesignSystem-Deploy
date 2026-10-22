@@ -1,0 +1,53 @@
+
+name: Publish DM Design System
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dm-design-system-publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Design System
+        uses: actions/checkout@v4
+        with:
+          repository: daniellemoscatelli87/DaniMoscatelli-DesignSystem
+          ref: main
+          path: source
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        working-directory: source
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build Design System
+        working-directory: source
+        run: pnpm build
+
+      - name: Publish compiled files
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          external_repository: daniellemoscatelli87/DaniMoscatelli-DesignSystem
+          publish_branch: gh-pages
+          publish_dir: ./source/dist
+          force_orphan: true
