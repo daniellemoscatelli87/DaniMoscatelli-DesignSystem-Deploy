@@ -1,53 +1,161 @@
+# Publica o DM Design System com versionamento.
+#
+# Fonte: branch main de daniellemoscatelli87/DaniMoscatelli-DesignSystem (recebe os envios do Figma Make).
+# Destino: branch gh-pages do mesmo repositório (GitHub Pages), mostrado no site em /designsystem.
+# Registro: pasta versoes/ deste repositório (manifesto e inventário de cada versão).
+#
+# A cada 15 minutos: se o main mudou, cria a versão seguinte (v1, v2, ...), etiqueta a fonte com a tag vN,
+# compara o inventário com a versão no ar e só publica se nada sumiu. Se algo sumiu, a versão fica
+# registrada como "retida", o site continua com a versão anterior e o fluxo falha com a lista do que faltou.
+# Manualmente: "publicar" com "aceitar_remocoes" publica uma versão retida; "voltar" coloca no ar uma versão anterior.
 
-name: Publish DM Design System
+name: Publicar DM Design System
 
 on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+    inputs:
+      acao:
+        description: 'publicar = versão nova da fonte, se houver · voltar = colocar no ar uma versão anterior'
+        type: choice
+        options: [publicar, voltar]
+        default: publicar
+      versao:
+        description: 'Só para "voltar": versão a colocar no ar (ex.: v2)'
+        type: string
+        default: ''
+      aceitar_remocoes:
+        description: 'Publicar mesmo que seções, itens de menu, componentes ou tokens tenham sumido'
+        type: boolean
+        default: false
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: dm-design-system-publish
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  publicar:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Design System
+      - name: Baixar este repositório (registro de versões)
+        uses: actions/checkout@v4
+
+      - name: Baixar a fonte do design system
         uses: actions/checkout@v4
         with:
           repository: daniellemoscatelli87/DaniMoscatelli-DesignSystem
           ref: main
           path: source
+          fetch-depth: 0
+          token: ${{ secrets.DEPLOY_TOKEN }}
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
-
-      - name: Setup Node.js
+      - name: Preparar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - name: Install dependencies
+      - name: Planejar a execução
+        id: plano
+        env:
+          ACAO: ${{ github.event.inputs.acao || 'publicar' }}
+          VERSAO_PEDIDA: ${{ github.event.inputs.versao }}
+          ACEITAR_REMOCOES: ${{ github.event.inputs.aceitar_remocoes || 'false' }}
+          FONTE_DIR: source
+        run: node scripts/versionar.mjs planejar
+
+      - name: Nada a fazer
+        if: steps.plano.outputs.continuar != 'true'
+        run: echo "${{ steps.plano.outputs.motivo }}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Posicionar a fonte na versão pedida (voltar)
+        if: steps.plano.outputs.continuar == 'true' && steps.plano.outputs.modo == 'voltar'
+        run: git -C source checkout --detach "${{ steps.plano.outputs.fonte_sha }}"
+
+      - name: Inventariar a fonte
+        if: steps.plano.outputs.continuar == 'true' && steps.plano.outputs.modo != 'voltar'
+        run: node scripts/inventario.mjs source "versoes/${{ steps.plano.outputs.versao }}.json"
+
+      - name: Comparar com a versão no ar
+        id: comparar
+        if: steps.plano.outputs.continuar == 'true' && steps.plano.outputs.modo != 'voltar'
+        run: |
+          ANTERIOR=""
+          if [ -n "${{ steps.plano.outputs.anterior }}" ]; then ANTERIOR="versoes/${{ steps.plano.outputs.anterior }}.json"; fi
+          node scripts/versionar.mjs comparar "$ANTERIOR" "versoes/${{ steps.plano.outputs.versao }}.json" versoes/relatorio-execucao.md
+          { echo "## ${{ steps.plano.outputs.versao }} · fonte ${{ steps.plano.outputs.fonte_sha }}"; echo; cat versoes/relatorio-execucao.md; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Conferir a linha base do vite.config.ts
+        if: steps.plano.outputs.continuar == 'true'
+        run: |
+          if ! grep -Eq "base:\s*['\"]/DaniMoscatelli-DesignSystem/['\"]" source/vite.config.ts; then
+            echo "::error::vite.config.ts perdeu a linha base: '/DaniMoscatelli-DesignSystem/'. Sem ela o endereço do site deixa de carregar. Nada foi publicado."
+            exit 1
+          fi
+
+      - name: Etiquetar a fonte (tag da versão)
+        if: steps.plano.outputs.continuar == 'true' && steps.plano.outputs.modo == 'nova'
+        run: |
+          git -C source tag -a "${{ steps.plano.outputs.versao }}" -m "DM Design System ${{ steps.plano.outputs.versao }}"
+          git -C source push origin "${{ steps.plano.outputs.versao }}"
+
+      - name: Reter a versão se algo sumiu
+        if: steps.plano.outputs.continuar == 'true' && steps.plano.outputs.modo == 'nova' && steps.comparar.outputs.removidos != '0' && (github.event.inputs.aceitar_remocoes || 'false') != 'true'
+        run: |
+          node scripts/versionar.mjs registrar "${{ steps.plano.outputs.versao }}" retida "${{ steps.plano.outputs.fonte_sha }}" nova versoes/diferencas-execucao.json
+          echo "::error::${{ steps.plano.outputs.versao }} foi registrada e etiquetada, mas NÃO publicada: ${{ steps.comparar.outputs.removidos }} item(ns) sumiram em relação a ${{ steps.plano.outputs.anterior }}. Veja o resumo. Para publicar mesmo assim, rode o fluxo manualmente com 'aceitar_remocoes' marcado."
+          exit 1
+
+      - name: Preparar pnpm
+        if: steps.plano.outputs.continuar == 'true'
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Instalar dependências
+        if: steps.plano.outputs.continuar == 'true'
         working-directory: source
         run: pnpm install --no-frozen-lockfile
 
-      - name: Build Design System
+      - name: Construir o design system
+        if: steps.plano.outputs.continuar == 'true'
         working-directory: source
         run: pnpm build
 
-      - name: Publish compiled files
+      - name: Publicar no GitHub Pages (branch gh-pages)
+        if: steps.plano.outputs.continuar == 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
           external_repository: daniellemoscatelli87/DaniMoscatelli-DesignSystem
           publish_branch: gh-pages
           publish_dir: ./source/dist
-          force_orphan: true
+          user_name: dm-design-system-deploy
+          user_email: daniellemoscatelli87@users.noreply.github.com
+          full_commit_message: '${{ steps.plano.outputs.versao }} · fonte ${{ steps.plano.outputs.fonte_sha }} · ${{ steps.plano.outputs.modo }}'
+
+      - name: Registrar a versão como publicada
+        if: steps.plano.outputs.continuar == 'true'
+        run: |
+          case "${{ steps.plano.outputs.modo }}" in
+            nova) EVENTO=nova ;;
+            aceitar) EVENTO=aceita ;;
+            voltar) EVENTO=voltou ;;
+            *) EVENTO=nova ;;
+          esac
+          node scripts/versionar.mjs registrar "${{ steps.plano.outputs.versao }}" publicada "${{ steps.plano.outputs.fonte_sha }}" "$EVENTO" versoes/diferencas-execucao.json
+          echo "No ar: ${{ steps.plano.outputs.versao }} ($EVENTO)." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Gravar o registro de versões neste repositório
+        if: always() && steps.plano.outputs.continuar == 'true'
+        run: |
+          rm -f versoes/relatorio-execucao.md versoes/diferencas-execucao.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versoes
+          if git diff --cached --quiet; then echo "Registro sem mudanças."; exit 0; fi
+          git commit -m "Registro: ${{ steps.plano.outputs.versao }} (${{ steps.plano.outputs.modo }}, ${{ job.status }})"
+          git push
