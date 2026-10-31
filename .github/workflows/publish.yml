@@ -99,6 +99,8 @@ jobs:
       - name: Etiquetar a fonte (tag da versão)
         if: steps.plano.outputs.continuar == 'true' && steps.plano.outputs.modo == 'nova'
         run: |
+          git -C source config user.name "dm-design-system-deploy"
+          git -C source config user.email "daniellemoscatelli87@users.noreply.github.com"
           git -C source tag -a "${{ steps.plano.outputs.versao }}" -m "DM Design System ${{ steps.plano.outputs.versao }}"
           git -C source push origin "${{ steps.plano.outputs.versao }}"
 
