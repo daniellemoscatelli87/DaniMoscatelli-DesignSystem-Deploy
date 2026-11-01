@@ -1,5 +1,5 @@
 {
-  "atual": "v11",
+  "atual": "v12",
   "versoes": [
     {
       "versao": "v1",
@@ -762,6 +762,34 @@
         "tokens": []
       },
       "publicada_em": "2026-11-01T10:47:45.908Z"
+    },
+    {
+      "versao": "v12",
+      "fonte_sha": "11c91c43a484c58ae4b309d3f55db63c5399dcff",
+      "data": "2026-11-01T12:27:04.862Z",
+      "status": "publicada",
+      "inventario": "versoes/v12.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "buttons/segmented"
+        ],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [
+          "segmented-control"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-01T12:27:04.862Z"
     }
   ],
   "publicacoes": [
@@ -818,6 +846,11 @@
     {
       "data": "2026-11-01T10:47:45.908Z",
       "versao": "v11",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-01T12:27:04.862Z",
+      "versao": "v12",
       "evento": "nova"
     }
   ]
