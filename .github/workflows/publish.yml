@@ -103,6 +103,10 @@ jobs:
         run: |
           git -C source config user.name "dm-design-system-deploy"
           git -C source config user.email "daniellemoscatelli87@users.noreply.github.com"
+          if git -C source ls-remote --exit-code --tags origin "refs/tags/${{ steps.plano.outputs.versao }}" >/dev/null 2>&1; then
+            echo "Tag ${{ steps.plano.outputs.versao }} já existe na fonte; nada a gravar."
+            exit 0
+          fi
           git -C source tag -a "${{ steps.plano.outputs.versao }}" -m "DM Design System ${{ steps.plano.outputs.versao }}"
           git -C source push origin "${{ steps.plano.outputs.versao }}"
 
@@ -162,4 +166,11 @@ jobs:
           git add versoes
           if git diff --cached --quiet; then echo "Registro sem mudanças."; exit 0; fi
           git commit -m "Registro: ${{ steps.plano.outputs.versao }} (${{ steps.plano.outputs.modo }}, ${{ job.status }})"
-          git push
+          for tentativa in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            echo "Push rejeitado (outro fluxo gravou antes); atualizando e tentando de novo ($tentativa)…"
+            git pull --rebase origin main || { git rebase --abort; sleep 5; git pull --rebase origin main; }
+            sleep $((tentativa * 3))
+          done
+          echo "::error::Não foi possível gravar o registro de versões depois de 5 tentativas."
+          exit 1
