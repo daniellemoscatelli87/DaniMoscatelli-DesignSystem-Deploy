@@ -8,10 +8,11 @@
 //   atual        versão que está no ar
 //   versoes[]    toda versão registrada: { versao, fonte_sha, data, status (publicada|retida), inventario, removidos, adicionados }
 //   publicacoes[] histórico do que foi ao ar: { data, versao, evento (nova|aceita|voltou) }
-import { readFileSync, writeFileSync, existsSync, appendFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, appendFileSync, mkdirSync } from "node:fs";
 import { execSync } from "node:child_process";
 
-const MANIFESTO = "versoes/versoes.json";
+const REGISTRO = process.env.REGISTRO_DIR || "versoes";
+const MANIFESTO = `${REGISTRO}/versoes.json`;
 const CATEGORIAS = ["menu_grupos", "menu_itens", "secoes", "ancoras", "componentes", "tokens"];
 const NOMES = {
   menu_grupos: "grupos do menu",
@@ -24,7 +25,7 @@ const NOMES = {
 
 const lerManifesto = () =>
   existsSync(MANIFESTO) ? JSON.parse(readFileSync(MANIFESTO, "utf8")) : { atual: null, versoes: [], publicacoes: [] };
-const gravarManifesto = (m) => writeFileSync(MANIFESTO, JSON.stringify(m, null, 2) + "\n");
+const gravarManifesto = (m) => { mkdirSync(REGISTRO, { recursive: true }); writeFileSync(MANIFESTO, JSON.stringify(m, null, 2) + "\n"); };
 const saida = (pares) => {
   for (const [k, v] of Object.entries(pares)) {
     console.log(`${k}=${v}`);
@@ -109,7 +110,7 @@ function comparar(args) {
   const relatorio = linhas.join("\n") + "\n";
   console.log(relatorio);
   if (arqRelatorio) writeFileSync(arqRelatorio, relatorio);
-  writeFileSync("versoes/diferencas-execucao.json", JSON.stringify({ removidos, adicionados }, null, 2) + "\n");
+  writeFileSync(`${REGISTRO}/diferencas-execucao.json`, JSON.stringify({ removidos, adicionados }, null, 2) + "\n");
   saida({ removidos: String(totalRemovidos), adicionados: String(totalAdicionados), vite_base_ok: String(!!novo.vite_base_ok) });
 }
 
@@ -124,7 +125,7 @@ function registrar(args) {
   const dif = arqDiferencas && existsSync(arqDiferencas) ? JSON.parse(readFileSync(arqDiferencas, "utf8")) : null;
   let entrada = manifesto.versoes.find((v) => v.versao === versao);
   if (!entrada) {
-    entrada = { versao, fonte_sha: fonteSha, data: agora, status, inventario: `versoes/${versao}.json` };
+    entrada = { versao, fonte_sha: fonteSha, data: agora, status, inventario: `${REGISTRO}/${versao}.json` };
     manifesto.versoes.push(entrada);
   }
   entrada.status = status;
