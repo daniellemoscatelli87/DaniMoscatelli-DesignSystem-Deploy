@@ -1,5 +1,5 @@
 {
-  "atual": "v4",
+  "atual": "v5",
   "versoes": [
     {
       "versao": "v1",
@@ -554,6 +554,30 @@
         "tokens": []
       },
       "publicada_em": "2026-11-01T08:13:26.896Z"
+    },
+    {
+      "versao": "v5",
+      "fonte_sha": "b37686a78d6643612404257aa1c0be2cbec9b7c7",
+      "data": "2026-11-01T08:28:09.423Z",
+      "status": "publicada",
+      "inventario": "versoes/v5.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-01T08:28:09.423Z"
     }
   ],
   "publicacoes": [
@@ -575,6 +599,11 @@
     {
       "data": "2026-11-01T08:13:26.896Z",
       "versao": "v4",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-01T08:28:09.423Z",
+      "versao": "v5",
       "evento": "nova"
     }
   ]
