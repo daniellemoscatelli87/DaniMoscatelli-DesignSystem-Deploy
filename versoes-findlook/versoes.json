@@ -1,5 +1,5 @@
 {
-  "atual": "v4",
+  "atual": "v5",
   "versoes": [
     {
       "versao": "v1",
@@ -553,6 +553,50 @@
         "tokens": []
       },
       "publicada_em": "2026-11-01T07:00:52.505Z"
+    },
+    {
+      "versao": "v5",
+      "fonte_sha": "dd710362d0942739d8953bdc2628a362a75c3b88",
+      "data": "2026-11-01T08:02:18.408Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v5.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "sidepanel"
+        ],
+        "menu_itens": [
+          "sidepanel/sidepanel-a11y",
+          "sidepanel/sidepanel-anatomy",
+          "sidepanel/sidepanel-behavior",
+          "sidepanel/sidepanel-store",
+          "sidepanel/sidepanel-tokens",
+          "sidepanel/sidepanel-usage"
+        ],
+        "secoes": [
+          "SidePanel"
+        ],
+        "ancoras": [
+          "sidepanel-a11y",
+          "sidepanel-anatomy",
+          "sidepanel-behavior",
+          "sidepanel-store",
+          "sidepanel-tokens",
+          "sidepanel-usage"
+        ],
+        "componentes": [
+          "side-panel"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-01T08:02:18.408Z"
     }
   ],
   "publicacoes": [
@@ -574,6 +618,11 @@
     {
       "data": "2026-11-01T07:00:52.505Z",
       "versao": "v4",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-01T08:02:18.408Z",
+      "versao": "v5",
       "evento": "nova"
     }
   ]
