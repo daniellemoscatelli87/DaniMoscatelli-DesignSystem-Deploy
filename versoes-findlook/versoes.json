@@ -1,5 +1,5 @@
 {
-  "atual": "v10",
+  "atual": "v11",
   "versoes": [
     {
       "versao": "v1",
@@ -721,6 +721,55 @@
         "tokens": []
       },
       "publicada_em": "2026-11-01T09:30:30.106Z"
+    },
+    {
+      "versao": "v11",
+      "fonte_sha": "b4235ccb7555baecfe8b9950d5f9118cc815b841",
+      "data": "2026-11-01T09:45:39.171Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v11.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "upload"
+        ],
+        "menu_itens": [
+          "upload/upload-a11y",
+          "upload/upload-dropzone",
+          "upload/upload-gallery",
+          "upload/upload-image",
+          "upload/upload-list",
+          "upload/upload-sheet",
+          "upload/upload-states",
+          "upload/upload-tokens",
+          "upload/upload-usage"
+        ],
+        "secoes": [
+          "Upload"
+        ],
+        "ancoras": [
+          "upload-a11y",
+          "upload-dropzone",
+          "upload-gallery",
+          "upload-image",
+          "upload-sheet",
+          "upload-states",
+          "upload-tokens",
+          "upload-usage"
+        ],
+        "componentes": [
+          "upload"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-01T09:45:39.171Z"
     }
   ],
   "publicacoes": [
@@ -772,6 +821,11 @@
     {
       "data": "2026-11-01T09:30:30.106Z",
       "versao": "v10",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-01T09:45:39.171Z",
+      "versao": "v11",
       "evento": "nova"
     }
   ]
