@@ -1,12 +1,12 @@
 {
-  "gerado_em": "2026-11-01T07:48:26.129Z",
+  "gerado_em": "2026-11-01T07:57:29.451Z",
   "vite_base_ok": true,
   "totais": {
-    "menu_grupos": 20,
-    "menu_itens": 104,
-    "secoes": 19,
-    "ancoras": 68,
-    "componentes": 47,
+    "menu_grupos": 21,
+    "menu_itens": 110,
+    "secoes": 20,
+    "ancoras": 74,
+    "componentes": 48,
     "tokens": 168
   },
   "menu_grupos": [
@@ -27,6 +27,7 @@
     "overlays",
     "overview",
     "principles",
+    "sidepanel",
     "templates",
     "tokens",
     "usability"
@@ -113,6 +114,12 @@
     "overlays/overlays-tokens",
     "overlays/pagination",
     "overlays/tooltips",
+    "sidepanel/sidepanel-a11y",
+    "sidepanel/sidepanel-anatomy",
+    "sidepanel/sidepanel-behavior",
+    "sidepanel/sidepanel-contact",
+    "sidepanel/sidepanel-tokens",
+    "sidepanel/sidepanel-usage",
     "templates/template-auth",
     "templates/template-contact",
     "templates/template-dashboard",
@@ -154,6 +161,7 @@
     "Motion",
     "Overlays",
     "Principles",
+    "SidePanel",
     "Templates",
     "Tokens",
     "Usability"
@@ -202,6 +210,12 @@
     "radius",
     "section-backgrounds",
     "shadows",
+    "sidepanel-a11y",
+    "sidepanel-anatomy",
+    "sidepanel-behavior",
+    "sidepanel-contact",
+    "sidepanel-tokens",
+    "sidepanel-usage",
     "skeleton",
     "spacing",
     "table",
@@ -265,6 +279,7 @@
     "separator",
     "sheet",
     "shine-border",
+    "side-panel",
     "sidebar",
     "skeleton",
     "slider",
@@ -468,6 +483,7 @@
     "badges": "Labels",
     "icons": "Icons",
     "overlays": "Overlays",
+    "sidepanel": "Side Panel",
     "brand/brand-logo-vertical": "Logo Vertical",
     "brand/brand-logo-horizontal": "Logo Horizontal",
     "brand/brand-symbol": "Symbol / Icon",
@@ -571,7 +587,13 @@
     "overlays/dropdown": "Dropdown",
     "overlays/dialogs": "Dialogs",
     "overlays/accordion": "Accordion",
-    "overlays/overlays-tokens": "Tokens"
+    "overlays/overlays-tokens": "Tokens",
+    "sidepanel/sidepanel-anatomy": "Anatomy",
+    "sidepanel/sidepanel-behavior": "Behavior",
+    "sidepanel/sidepanel-contact": "Contact form",
+    "sidepanel/sidepanel-a11y": "Accessibility checklist",
+    "sidepanel/sidepanel-usage": "Usage",
+    "sidepanel/sidepanel-tokens": "Tokens"
   },
   "removidos_declarados_no_changelog": [
     "Posts e Carrosséis"
