@@ -1,5 +1,5 @@
 {
-  "atual": "v1",
+  "atual": "v2",
   "versoes": [
     {
       "versao": "v1",
@@ -431,12 +431,72 @@
         ]
       },
       "publicada_em": "2026-10-31T21:40:58.728Z"
+    },
+    {
+      "versao": "v2",
+      "fonte_sha": "50f63f11f56d46901d1111ac544e51485fbf9223",
+      "data": "2026-11-01T02:57:16.817Z",
+      "status": "publicada",
+      "inventario": "versoes/v2.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "cards"
+        ],
+        "menu_itens": [
+          "cards/card-accessibility",
+          "cards/card-actions",
+          "cards/card-anatomy",
+          "cards/card-guidelines",
+          "cards/card-layout",
+          "cards/card-nested",
+          "cards/card-shine",
+          "cards/card-states",
+          "cards/card-tokens",
+          "cards/card-variants",
+          "motion/shine-border"
+        ],
+        "secoes": [
+          "Card"
+        ],
+        "ancoras": [
+          "card-accessibility",
+          "card-actions",
+          "card-anatomy",
+          "card-guidelines",
+          "card-layout",
+          "card-nested",
+          "card-shine",
+          "card-states",
+          "card-tokens",
+          "card-variants"
+        ],
+        "componentes": [
+          "shine-border"
+        ],
+        "tokens": [
+          "--animate-shine"
+        ]
+      },
+      "publicada_em": "2026-11-01T02:57:16.817Z"
     }
   ],
   "publicacoes": [
     {
       "data": "2026-10-31T21:40:58.728Z",
       "versao": "v1",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-01T02:57:16.817Z",
+      "versao": "v2",
       "evento": "nova"
     }
   ]
