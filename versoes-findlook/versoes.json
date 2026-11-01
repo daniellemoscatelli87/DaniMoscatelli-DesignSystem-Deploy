@@ -1,5 +1,5 @@
 {
-  "atual": "v17",
+  "atual": "v18",
   "versoes": [
     {
       "versao": "v1",
@@ -935,6 +935,36 @@
         "tokens": []
       },
       "publicada_em": "2026-11-01T13:20:54.804Z"
+    },
+    {
+      "versao": "v18",
+      "fonte_sha": "df5d242c77682eab00038f22999d440116b7f6a9",
+      "data": "2026-11-01T13:36:59.362Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v18.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "backgrounds/doodle-bg"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "doodle-bg"
+        ],
+        "componentes": [
+          "doodle-texture"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-01T13:36:59.362Z"
     }
   ],
   "publicacoes": [
@@ -1021,6 +1051,11 @@
     {
       "data": "2026-11-01T13:20:54.804Z",
       "versao": "v17",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-01T13:36:59.362Z",
+      "versao": "v18",
       "evento": "nova"
     }
   ]
