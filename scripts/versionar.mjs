@@ -106,7 +106,7 @@ function comparar(args) {
       linhas.push(`\nRemoções que o próprio design system declara no changelog: ${novo.removidos_declarados_no_changelog.join("; ")}.`);
     }
   }
-  if (!novo.vite_base_ok) linhas.push("\n**ERRO:** `vite.config.ts` perdeu a linha `base: '/DaniMoscatelli-DesignSystem/'`. Sem ela o endereço do site deixa de carregar.");
+  if (!novo.vite_base_ok) linhas.push(`\n**ERRO:** \`vite.config.ts\` perdeu a linha \`base: '${process.env.VITE_BASE || "/DaniMoscatelli-DesignSystem/"}'\`. Sem ela o endereço do site deixa de carregar.`);
   const relatorio = linhas.join("\n") + "\n";
   console.log(relatorio);
   if (arqRelatorio) writeFileSync(arqRelatorio, relatorio);

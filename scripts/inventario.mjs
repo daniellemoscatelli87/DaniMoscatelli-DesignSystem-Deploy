@@ -65,9 +65,10 @@ const removidosDeclarados = [
   ...changelog.matchAll(/kind:\s*"Removed",\s*title:\s*\{[^}]*?pt:\s*"([^"]+)"/g),
 ].map((m) => m[1]);
 
-// Proteção conhecida: o GitHub Pages depende desta linha do vite.config.ts.
+// Proteção conhecida: o GitHub Pages depende desta linha do vite.config.ts (VITE_BASE, padrão do DM Design System).
+const VITE_BASE = process.env.VITE_BASE || "/DaniMoscatelli-DesignSystem/";
 const vite = ler("vite.config.ts");
-const viteBaseOk = /base:\s*['"]\/DaniMoscatelli-DesignSystem\/['"]/.test(vite);
+const viteBaseOk = vite.includes(`base: '${VITE_BASE}'`) || vite.includes(`base: "${VITE_BASE}"`);
 
 const inventario = {
   gerado_em: new Date().toISOString(),
@@ -93,4 +94,4 @@ const inventario = {
 mkdirSync(dirname(saida), { recursive: true });
 writeFileSync(saida, JSON.stringify(inventario, null, 2) + "\n");
 console.log(`Inventário gravado em ${saida}:`, JSON.stringify(inventario.totais));
-if (!viteBaseOk) console.log("ATENÇÃO: vite.config.ts sem base '/DaniMoscatelli-DesignSystem/'.");
+if (!viteBaseOk) console.log(`ATENÇÃO: vite.config.ts sem base '${VITE_BASE}'.`);

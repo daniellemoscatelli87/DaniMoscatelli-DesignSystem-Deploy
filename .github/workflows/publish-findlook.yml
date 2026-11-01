@@ -42,6 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRO_DIR: versoes-findlook
+      VITE_BASE: /FindLook-DesignSystem/
     steps:
       - name: Baixar este repositório (registro de versões)
         uses: actions/checkout@v4
@@ -104,7 +105,7 @@ jobs:
         run: |
           git -C source config user.name "dm-design-system-deploy"
           git -C source config user.email "daniellemoscatelli87@users.noreply.github.com"
-          git -C source tag -a "${{ steps.plano.outputs.versao }}" -m "DM Design System ${{ steps.plano.outputs.versao }}"
+          git -C source tag -a "${{ steps.plano.outputs.versao }}" -m "FindLook Design System ${{ steps.plano.outputs.versao }}"
           git -C source push origin "${{ steps.plano.outputs.versao }}"
 
       - name: Reter a versão se algo sumiu

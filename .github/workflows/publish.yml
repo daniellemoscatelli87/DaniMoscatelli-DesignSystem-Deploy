@@ -40,6 +40,8 @@ concurrency:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    env:
+      VITE_BASE: /DaniMoscatelli-DesignSystem/
     steps:
       - name: Baixar este repositório (registro de versões)
         uses: actions/checkout@v4
