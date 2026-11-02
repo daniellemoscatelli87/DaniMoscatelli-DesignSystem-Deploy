@@ -1,5 +1,5 @@
 {
-  "atual": "v21",
+  "atual": "v22",
   "versoes": [
     {
       "versao": "v1",
@@ -1018,6 +1018,30 @@
         "tokens": []
       },
       "publicada_em": "2026-11-02T01:55:35.990Z"
+    },
+    {
+      "versao": "v22",
+      "fonte_sha": "b9c521994b9c2bca61f602b09621e3070f1bd2b8",
+      "data": "2026-11-02T02:23:57.257Z",
+      "status": "publicada",
+      "inventario": "versoes/v22.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-02T02:23:57.257Z"
     }
   ],
   "publicacoes": [
@@ -1124,6 +1148,11 @@
     {
       "data": "2026-11-02T01:55:35.990Z",
       "versao": "v21",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-02T02:23:57.257Z",
+      "versao": "v22",
       "evento": "nova"
     }
   ]
