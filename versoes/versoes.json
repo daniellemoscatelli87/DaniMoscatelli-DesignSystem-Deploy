@@ -1,5 +1,5 @@
 {
-  "atual": "v24",
+  "atual": "v25",
   "versoes": [
     {
       "versao": "v1",
@@ -1090,6 +1090,46 @@
         "tokens": []
       },
       "publicada_em": "2026-11-02T09:08:25.158Z"
+    },
+    {
+      "versao": "v25",
+      "fonte_sha": "3a11f799075bf297f901e83b5dca4b2a25015c98",
+      "data": "2026-11-03T09:51:49.970Z",
+      "status": "publicada",
+      "inventario": "versoes/v25.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "timeline"
+        ],
+        "menu_itens": [
+          "timeline/timeline-anatomy",
+          "timeline/timeline-demo",
+          "timeline/timeline-motion",
+          "timeline/timeline-usage"
+        ],
+        "secoes": [
+          "Timeline"
+        ],
+        "ancoras": [
+          "timeline-anatomy",
+          "timeline-demo",
+          "timeline-motion",
+          "timeline-usage"
+        ],
+        "componentes": [
+          "timeline"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-03T09:51:49.970Z"
     }
   ],
   "publicacoes": [
@@ -1211,6 +1251,11 @@
     {
       "data": "2026-11-02T09:08:25.158Z",
       "versao": "v24",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-03T09:51:49.970Z",
+      "versao": "v25",
       "evento": "nova"
     }
   ]
