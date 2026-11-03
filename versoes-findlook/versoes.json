@@ -1,5 +1,5 @@
 {
-  "atual": "v42",
+  "atual": "v43",
   "versoes": [
     {
       "versao": "v1",
@@ -1588,6 +1588,46 @@
         "tokens": []
       },
       "publicada_em": "2026-11-03T09:47:03.067Z"
+    },
+    {
+      "versao": "v43",
+      "fonte_sha": "bbf6801d6f93414b7ee80c264084f6ade44a85f1",
+      "data": "2026-11-03T09:52:15.403Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v43.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "timeline"
+        ],
+        "menu_itens": [
+          "timeline/timeline-anatomy",
+          "timeline/timeline-demo",
+          "timeline/timeline-motion",
+          "timeline/timeline-usage"
+        ],
+        "secoes": [
+          "Timeline"
+        ],
+        "ancoras": [
+          "timeline-anatomy",
+          "timeline-demo",
+          "timeline-motion",
+          "timeline-usage"
+        ],
+        "componentes": [
+          "timeline"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-03T09:52:15.403Z"
     }
   ],
   "publicacoes": [
@@ -1799,6 +1839,11 @@
     {
       "data": "2026-11-03T09:47:03.067Z",
       "versao": "v42",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-03T09:52:15.403Z",
+      "versao": "v43",
       "evento": "nova"
     }
   ]
