@@ -1,5 +1,5 @@
 {
-  "atual": "v29",
+  "atual": "v30",
   "versoes": [
     {
       "versao": "v1",
@@ -1229,6 +1229,41 @@
         "tokens": []
       },
       "publicada_em": "2026-11-02T03:07:45.583Z"
+    },
+    {
+      "versao": "v30",
+      "fonte_sha": "bc9228aefbd74a9948a4e36412c794085675654d",
+      "data": "2026-11-03T07:05:40.076Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v30.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "ilustracoes"
+        ],
+        "menu_itens": [
+          "ilustracoes/ilustracao-404",
+          "ilustracoes/ilustracoes-estilo"
+        ],
+        "secoes": [
+          "Illustrations"
+        ],
+        "ancoras": [
+          "ilustracoes-estilo"
+        ],
+        "componentes": [
+          "fashion-icons"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-03T07:05:40.076Z"
     }
   ],
   "publicacoes": [
@@ -1375,6 +1410,11 @@
     {
       "data": "2026-11-02T03:07:45.583Z",
       "versao": "v29",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-03T07:05:40.076Z",
+      "versao": "v30",
       "evento": "nova"
     }
   ]
