@@ -1366,6 +1366,53 @@
         "tokens": []
       },
       "publicada_em": "2026-11-03T07:32:41.930Z"
+    },
+    {
+      "versao": "v35",
+      "fonte_sha": "8e71d185df0c0bc1a87c1c4ff125b9469fd3876c",
+      "data": "2026-11-03T07:40:59.628Z",
+      "status": "retida",
+      "inventario": "versoes-findlook/v35.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "ilustracoes/ilustracao-404",
+          "ilustracoes/ilustracao-contatos-vazio",
+          "ilustracoes/ilustracao-favoritos-vazio",
+          "ilustracoes/ilustracao-lojas-seguidas-vazio",
+          "ilustracoes/ilustracoes-estilo"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "ilustracoes-estilo"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "ilustracoes/mascote-ativos",
+          "ilustracoes/mascote-diretrizes",
+          "ilustracoes/mascote-estados-erro",
+          "ilustracoes/mascote-estados-vazios",
+          "ilustracoes/mascote-estilo",
+          "ilustracoes/mascote-expressoes",
+          "ilustracoes/mascote-personagem"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "mascote-ativos",
+          "mascote-diretrizes",
+          "mascote-estados-erro",
+          "mascote-estados-vazios",
+          "mascote-estilo",
+          "mascote-expressoes",
+          "mascote-personagem"
+        ],
+        "componentes": [],
+        "tokens": []
+      }
     }
   ],
   "publicacoes": [
