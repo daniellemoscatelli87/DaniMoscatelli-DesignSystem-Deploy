@@ -1,5 +1,5 @@
 {
-  "atual": "v31",
+  "atual": "v32",
   "versoes": [
     {
       "versao": "v1",
@@ -1290,6 +1290,32 @@
         "tokens": []
       },
       "publicada_em": "2026-11-03T07:14:12.454Z"
+    },
+    {
+      "versao": "v32",
+      "fonte_sha": "d482e72ff151cb4d3cf5ba33044a2c578149ae68",
+      "data": "2026-11-03T07:17:17.983Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v32.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "ilustracoes/ilustracao-lojas-seguidas-vazio"
+        ],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-03T07:17:17.983Z"
     }
   ],
   "publicacoes": [
@@ -1446,6 +1472,11 @@
     {
       "data": "2026-11-03T07:14:12.454Z",
       "versao": "v31",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-03T07:17:17.983Z",
+      "versao": "v32",
       "evento": "nova"
     }
   ]
