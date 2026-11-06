@@ -1,5 +1,5 @@
 {
-  "atual": "v54",
+  "atual": "v55",
   "versoes": [
     {
       "versao": "v1",
@@ -1934,6 +1934,71 @@
         "tokens": []
       },
       "publicada_em": "2026-11-06T18:09:20.884Z"
+    },
+    {
+      "versao": "v55",
+      "fonte_sha": "d1705dd7986c7deba396454ab8044596a52e45a0",
+      "data": "2026-11-06T19:08:42.732Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v55.json",
+      "removidos": {
+        "menu_grupos": [
+          "painel"
+        ],
+        "menu_itens": [
+          "painel/painel-cabecalho",
+          "painel/painel-engajamento",
+          "painel/painel-estrutura",
+          "painel/painel-grafico",
+          "painel/painel-indicadores",
+          "painel/painel-listas",
+          "painel/painel-produtos"
+        ],
+        "secoes": [
+          "Painel"
+        ],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "badges/listas-painel",
+          "buttons/botao-dividido",
+          "buttons/seletor-periodo",
+          "cards/card-dica",
+          "cards/card-plano",
+          "cards/faixa-beneficios",
+          "data/grafico-desempenho",
+          "data/kpi-painel",
+          "data/pontuacao-checklist",
+          "data/tabela-produtos",
+          "feedback/abas-contador",
+          "feedback/banner-promocional",
+          "overlays/barra-superior",
+          "overlays/cabecalho-pagina",
+          "overlays/menu-painel",
+          "states/states-publicacao"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "barra-superior",
+          "cabecalho-pagina",
+          "card-dica",
+          "card-plano",
+          "faixa-beneficios",
+          "grafico-desempenho",
+          "kpi-painel",
+          "listas-painel",
+          "menu-painel",
+          "pontuacao-checklist",
+          "tabela-produtos"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-06T19:08:42.732Z"
     }
   ],
   "publicacoes": [
@@ -2205,6 +2270,11 @@
     {
       "data": "2026-11-06T18:09:20.884Z",
       "versao": "v54",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-06T19:08:42.732Z",
+      "versao": "v55",
       "evento": "nova"
     }
   ]
