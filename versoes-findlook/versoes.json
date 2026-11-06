@@ -1,5 +1,5 @@
 {
-  "atual": "v53",
+  "atual": "v54",
   "versoes": [
     {
       "versao": "v1",
@@ -1896,6 +1896,44 @@
         "tokens": []
       },
       "publicada_em": "2026-11-06T17:42:44.580Z"
+    },
+    {
+      "versao": "v54",
+      "fonte_sha": "939d672d803b5fac8028ece673f17607c3890980",
+      "data": "2026-11-06T18:09:20.884Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v54.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "templates/template-contact",
+          "templates/template-inbox",
+          "templates/template-pricing",
+          "templates/template-produtos",
+          "templates/template-settings",
+          "templates/template-team"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "template-contact",
+          "template-inbox",
+          "template-pricing",
+          "template-produtos",
+          "template-settings",
+          "template-team"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-06T18:09:20.884Z"
     }
   ],
   "publicacoes": [
@@ -2162,6 +2200,11 @@
     {
       "data": "2026-11-06T17:42:44.580Z",
       "versao": "v53",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-06T18:09:20.884Z",
+      "versao": "v54",
       "evento": "nova"
     }
   ]
