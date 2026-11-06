@@ -1,5 +1,5 @@
 {
-  "atual": "v52",
+  "atual": "v53",
   "versoes": [
     {
       "versao": "v1",
@@ -1859,6 +1859,43 @@
         "tokens": []
       },
       "publicada_em": "2026-11-06T17:22:27.206Z"
+    },
+    {
+      "versao": "v53",
+      "fonte_sha": "4e03878992e15f163a67ab90552b97133564d575",
+      "data": "2026-11-06T17:42:44.580Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v53.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "painel"
+        ],
+        "menu_itens": [
+          "painel/painel-cabecalho",
+          "painel/painel-engajamento",
+          "painel/painel-estrutura",
+          "painel/painel-grafico",
+          "painel/painel-indicadores",
+          "painel/painel-listas",
+          "painel/painel-produtos",
+          "templates/template-produtos"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "template-produtos"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-06T17:42:44.580Z"
     }
   ],
   "publicacoes": [
@@ -2120,6 +2157,11 @@
     {
       "data": "2026-11-06T17:22:27.206Z",
       "versao": "v52",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-06T17:42:44.580Z",
+      "versao": "v53",
       "evento": "nova"
     }
   ]
