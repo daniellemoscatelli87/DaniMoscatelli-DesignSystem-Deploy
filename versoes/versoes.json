@@ -1,5 +1,5 @@
 {
-  "atual": "v33",
+  "atual": "v34",
   "versoes": [
     {
       "versao": "v1",
@@ -1330,6 +1330,32 @@
         "tokens": []
       },
       "publicada_em": "2026-11-06T16:24:32.506Z"
+    },
+    {
+      "versao": "v34",
+      "fonte_sha": "3c2591a4ee5cb7ce9d0405f3c20874c2bc37a507",
+      "data": "2026-11-06T20:46:42.838Z",
+      "status": "publicada",
+      "inventario": "versoes/v34.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [
+          "icones-preservados"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-06T20:46:42.838Z"
     }
   ],
   "publicacoes": [
@@ -1496,6 +1522,11 @@
     {
       "data": "2026-11-06T16:24:32.506Z",
       "versao": "v33",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-06T20:46:42.838Z",
+      "versao": "v34",
       "evento": "nova"
     }
   ]
