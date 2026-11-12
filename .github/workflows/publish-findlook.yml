@@ -133,7 +133,12 @@ jobs:
       - name: Construir o design system
         if: steps.plano.outputs.continuar == 'true'
         working-directory: source
-        run: pnpm build
+        env:
+          # Versão e ano mostrados nas páginas do DS ("Versão 37 · 2026")
+          VITE_VERSAO: ${{ steps.plano.outputs.versao }}
+        run: |
+          export VITE_VERSAO_ANO="$(date -u +%Y)"
+          pnpm build
 
       - name: Publicar no GitHub Pages (branch gh-pages do FindLook-DesignSystem)
         if: steps.plano.outputs.continuar == 'true'
