@@ -1,7 +1,8 @@
 # Publica o FindLook Design System com versionamento (mesma lógica do publish.yml do DM Design System).
 #
 # Fonte: branch main de daniellemoscatelli87/FindLook-DesignSystem (mantido no GitHub).
-# Destino: branch gh-pages do mesmo repositório (GitHub Pages): daniellemoscatelli87.github.io/FindLook-DesignSystem/.
+# Destino: branch gh-pages do mesmo repositório (GitHub Pages), no subdomínio https://designsystem.findlook.com.br
+# (desde 13/11/2026; o endereço antigo daniellemoscatelli87.github.io/FindLook-DesignSystem/ redireciona para ele).
 # Registro: pasta versoes-findlook/ deste repositório (manifesto e inventário de cada versão).
 #
 # A cada 15 minutos: se o main mudou, cria a versão seguinte (v1, v2, ...), etiqueta a fonte com a tag vN,
@@ -42,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRO_DIR: versoes-findlook
-      VITE_BASE: /FindLook-DesignSystem/
+      VITE_BASE: /
     steps:
       - name: Baixar este repositório (registro de versões)
         uses: actions/checkout@v4
@@ -95,8 +96,8 @@ jobs:
       - name: Conferir a linha base do vite.config.ts
         if: steps.plano.outputs.continuar == 'true'
         run: |
-          if ! grep -Eq "base:\s*['\"]/FindLook-DesignSystem/['\"]" source/vite.config.ts; then
-            echo "::error::vite.config.ts perdeu a linha base: '/FindLook-DesignSystem/'. Sem ela o endereço do site deixa de carregar. Nada foi publicado."
+          if ! grep -Eq "base:\s*['\"]/['\"]" source/vite.config.ts; then
+            echo "::error::vite.config.ts precisa da linha base: '/' (o site fica na raiz de designsystem.findlook.com.br). Sem ela o endereço do site deixa de carregar. Nada foi publicado."
             exit 1
           fi
 
@@ -148,6 +149,8 @@ jobs:
           external_repository: daniellemoscatelli87/FindLook-DesignSystem
           publish_branch: gh-pages
           publish_dir: ./source/dist
+          # Mantém o subdomínio do GitHub Pages a cada publicação (arquivo CNAME no gh-pages).
+          cname: designsystem.findlook.com.br
           user_name: findlook-design-system-deploy
           user_email: daniellemoscatelli87@users.noreply.github.com
           full_commit_message: '${{ steps.plano.outputs.versao }} · fonte ${{ steps.plano.outputs.fonte_sha }} · ${{ steps.plano.outputs.modo }}'
