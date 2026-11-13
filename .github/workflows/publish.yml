@@ -1,7 +1,9 @@
 # Publica o DM Design System com versionamento.
 #
 # Fonte: branch main de daniellemoscatelli87/DaniMoscatelli-DesignSystem (recebe os envios do Figma Make).
-# Destino: branch gh-pages do mesmo repositório (GitHub Pages), mostrado no site em /designsystem.
+# Destino: branch gh-pages do mesmo repositório (GitHub Pages), no subdomínio https://designsystem.danimoscatelli.com.br
+# (desde 13/11/2026; os endereços antigos daniellemoscatelli87.github.io/DaniMoscatelli-DesignSystem/ e
+# danimoscatelli.com.br/designsystem levam para ele).
 # Registro: pasta versoes/ deste repositório (manifesto e inventário de cada versão).
 #
 # A cada 15 minutos: se o main mudou, cria a versão seguinte (v1, v2, ...), etiqueta a fonte com a tag vN,
@@ -41,7 +43,7 @@ jobs:
   publicar:
     runs-on: ubuntu-latest
     env:
-      VITE_BASE: /DaniMoscatelli-DesignSystem/
+      VITE_BASE: /
     steps:
       - name: Baixar este repositório (registro de versões)
         uses: actions/checkout@v4
@@ -93,8 +95,8 @@ jobs:
       - name: Conferir a linha base do vite.config.ts
         if: steps.plano.outputs.continuar == 'true'
         run: |
-          if ! grep -Eq "base:\s*['\"]/DaniMoscatelli-DesignSystem/['\"]" source/vite.config.ts; then
-            echo "::error::vite.config.ts perdeu a linha base: '/DaniMoscatelli-DesignSystem/'. Sem ela o endereço do site deixa de carregar. Nada foi publicado."
+          if ! grep -Eq "base:\s*['\"]/['\"]" source/vite.config.ts; then
+            echo "::error::vite.config.ts precisa da linha base: '/' (o site fica na raiz de designsystem.danimoscatelli.com.br). Sem ela o endereço do site deixa de carregar. Nada foi publicado."
             exit 1
           fi
 
@@ -146,6 +148,8 @@ jobs:
           external_repository: daniellemoscatelli87/DaniMoscatelli-DesignSystem
           publish_branch: gh-pages
           publish_dir: ./source/dist
+          # Mantém o subdomínio do GitHub Pages a cada publicação (arquivo CNAME no gh-pages).
+          cname: designsystem.danimoscatelli.com.br
           user_name: dm-design-system-deploy
           user_email: daniellemoscatelli87@users.noreply.github.com
           full_commit_message: '${{ steps.plano.outputs.versao }} · fonte ${{ steps.plano.outputs.fonte_sha }} · ${{ steps.plano.outputs.modo }}'
