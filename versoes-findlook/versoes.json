@@ -1,5 +1,5 @@
 {
-  "atual": "v64",
+  "atual": "v65",
   "versoes": [
     {
       "versao": "v1",
@@ -2241,6 +2241,50 @@
         "tokens": []
       },
       "publicada_em": "2026-11-13T20:21:54.408Z"
+    },
+    {
+      "versao": "v65",
+      "fonte_sha": "61360c63687a8a7ab1feea36a84a7eafe2c3536b",
+      "data": "2026-11-13T21:13:21.812Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v65.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "header"
+        ],
+        "menu_itens": [
+          "header/header-a11y",
+          "header/header-backgrounds",
+          "header/header-demo",
+          "header/header-mobile",
+          "header/header-scroll",
+          "header/header-tokens",
+          "header/header-usage"
+        ],
+        "secoes": [
+          "Header"
+        ],
+        "ancoras": [
+          "header-a11y",
+          "header-backgrounds",
+          "header-demo",
+          "header-mobile",
+          "header-scroll",
+          "header-tokens",
+          "header-usage"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-13T21:13:21.812Z"
     }
   ],
   "publicacoes": [
@@ -2562,6 +2606,11 @@
     {
       "data": "2026-11-13T20:21:54.408Z",
       "versao": "v64",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-13T21:13:21.812Z",
+      "versao": "v65",
       "evento": "nova"
     }
   ]
