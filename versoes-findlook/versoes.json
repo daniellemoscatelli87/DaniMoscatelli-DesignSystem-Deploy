@@ -1,5 +1,5 @@
 {
-  "atual": "v62",
+  "atual": "v63",
   "versoes": [
     {
       "versao": "v1",
@@ -2177,6 +2177,46 @@
         "tokens": []
       },
       "publicada_em": "2026-11-12T18:38:47.742Z"
+    },
+    {
+      "versao": "v63",
+      "fonte_sha": "150176fe895eb68ed65dc824a795203d2bbc336f",
+      "data": "2026-11-13T19:56:16.124Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v63.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "stepper"
+        ],
+        "menu_itens": [
+          "stepper/stepper-a11y",
+          "stepper/stepper-anatomy",
+          "stepper/stepper-demo",
+          "stepper/stepper-usage"
+        ],
+        "secoes": [
+          "Stepper"
+        ],
+        "ancoras": [
+          "stepper-a11y",
+          "stepper-anatomy",
+          "stepper-demo",
+          "stepper-usage"
+        ],
+        "componentes": [
+          "stepper"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-13T19:56:16.124Z"
     }
   ],
   "publicacoes": [
@@ -2488,6 +2528,11 @@
     {
       "data": "2026-11-12T18:38:47.742Z",
       "versao": "v62",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-13T19:56:16.124Z",
+      "versao": "v63",
       "evento": "nova"
     }
   ]
