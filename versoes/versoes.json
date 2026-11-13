@@ -1,5 +1,5 @@
 {
-  "atual": "v41",
+  "atual": "v42",
   "versoes": [
     {
       "versao": "v1",
@@ -1524,6 +1524,50 @@
         "tokens": []
       },
       "publicada_em": "2026-11-13T20:21:58.533Z"
+    },
+    {
+      "versao": "v42",
+      "fonte_sha": "443fd9efc91fd4e249b8ddb9b79f5a691b16b3a2",
+      "data": "2026-11-13T21:13:33.070Z",
+      "status": "publicada",
+      "inventario": "versoes/v42.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "header"
+        ],
+        "menu_itens": [
+          "header/header-a11y",
+          "header/header-backgrounds",
+          "header/header-demo",
+          "header/header-mobile",
+          "header/header-scroll",
+          "header/header-tokens",
+          "header/header-usage"
+        ],
+        "secoes": [
+          "Header"
+        ],
+        "ancoras": [
+          "header-a11y",
+          "header-backgrounds",
+          "header-demo",
+          "header-mobile",
+          "header-scroll",
+          "header-tokens",
+          "header-usage"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-13T21:13:33.070Z"
     }
   ],
   "publicacoes": [
@@ -1730,6 +1774,11 @@
     {
       "data": "2026-11-13T20:21:58.533Z",
       "versao": "v41",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-13T21:13:33.070Z",
+      "versao": "v42",
       "evento": "nova"
     }
   ]
