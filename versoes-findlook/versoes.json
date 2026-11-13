@@ -1,5 +1,5 @@
 {
-  "atual": "v66",
+  "atual": "v67",
   "versoes": [
     {
       "versao": "v1",
@@ -2309,6 +2309,34 @@
         "tokens": []
       },
       "publicada_em": "2026-11-13T21:33:33.739Z"
+    },
+    {
+      "versao": "v67",
+      "fonte_sha": "e9557614849b21f261382d2e8726a9d61793e614",
+      "data": "2026-11-13T21:46:51.940Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v67.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "header/header-models"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "header-models"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-13T21:46:51.940Z"
     }
   ],
   "publicacoes": [
@@ -2640,6 +2668,11 @@
     {
       "data": "2026-11-13T21:33:33.739Z",
       "versao": "v66",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-13T21:46:51.940Z",
+      "versao": "v67",
       "evento": "nova"
     }
   ]
