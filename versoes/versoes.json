@@ -1,5 +1,5 @@
 {
-  "atual": "v45",
+  "atual": "v46",
   "versoes": [
     {
       "versao": "v1",
@@ -1644,6 +1644,48 @@
         "tokens": []
       },
       "publicada_em": "2026-11-14T15:10:38.097Z"
+    },
+    {
+      "versao": "v46",
+      "fonte_sha": "f95dd274d97d201d25c0625e09af3b4c9f6141bf",
+      "data": "2026-11-14T17:53:39.202Z",
+      "status": "publicada",
+      "inventario": "versoes/v46.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "cards/card-animacao",
+          "cards/card-escolher",
+          "cards/card-fundos",
+          "cards/card-glass-conteudo",
+          "cards/card-glass-fundos",
+          "cards/card-glass-teste",
+          "cards/card-ia",
+          "cards/card-orientacao"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "card-animacao",
+          "card-escolher",
+          "card-fundos",
+          "card-glass-conteudo",
+          "card-glass-fundos",
+          "card-glass-teste",
+          "card-ia",
+          "card-orientacao"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-14T17:53:39.202Z"
     }
   ],
   "publicacoes": [
@@ -1870,6 +1912,11 @@
     {
       "data": "2026-11-14T15:10:38.097Z",
       "versao": "v45",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-14T17:53:39.202Z",
+      "versao": "v46",
       "evento": "nova"
     }
   ]
