@@ -1,5 +1,5 @@
 {
-  "atual": "v69",
+  "atual": "v70",
   "versoes": [
     {
       "versao": "v1",
@@ -2391,6 +2391,48 @@
         "tokens": []
       },
       "publicada_em": "2026-11-14T15:10:39.662Z"
+    },
+    {
+      "versao": "v70",
+      "fonte_sha": "7700b48eebd506aedf789de87b42356cc86d45c2",
+      "data": "2026-11-14T17:53:37.275Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v70.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "cards/card-animacao",
+          "cards/card-escolher",
+          "cards/card-fundos",
+          "cards/card-glass-conteudo",
+          "cards/card-glass-fundos",
+          "cards/card-glass-teste",
+          "cards/card-ia",
+          "cards/card-orientacao"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "card-animacao",
+          "card-escolher",
+          "card-fundos",
+          "card-glass-conteudo",
+          "card-glass-fundos",
+          "card-glass-teste",
+          "card-ia",
+          "card-orientacao"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-14T17:53:37.275Z"
     }
   ],
   "publicacoes": [
@@ -2737,6 +2779,11 @@
     {
       "data": "2026-11-14T15:10:39.662Z",
       "versao": "v69",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-14T17:53:37.275Z",
+      "versao": "v70",
       "evento": "nova"
     }
   ]
