@@ -1,5 +1,5 @@
 {
-  "atual": "v50",
+  "atual": "v51",
   "versoes": [
     {
       "versao": "v1",
@@ -1830,6 +1830,48 @@
         ]
       },
       "publicada_em": "2026-11-16T04:30:02.200Z"
+    },
+    {
+      "versao": "v51",
+      "fonte_sha": "d49966ca2fbd284446faca330b70568d565339d5",
+      "data": "2026-11-16T18:36:42.593Z",
+      "status": "publicada",
+      "inventario": "versoes/v51.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": [
+          "--color-error-muted",
+          "--color-info-muted",
+          "--color-primary-muted",
+          "--color-success-muted",
+          "--color-surface-tint",
+          "--color-warning-muted",
+          "--duration-fast",
+          "--duration-instant",
+          "--duration-normal",
+          "--duration-slow",
+          "--duration-xslow",
+          "--ease-back",
+          "--ease-in",
+          "--ease-in-out",
+          "--ease-out",
+          "--ease-snappy",
+          "--surface-tint"
+        ]
+      },
+      "publicada_em": "2026-11-16T18:36:42.593Z"
     }
   ],
   "publicacoes": [
@@ -2081,6 +2123,11 @@
     {
       "data": "2026-11-16T04:30:02.200Z",
       "versao": "v50",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-16T18:36:42.593Z",
+      "versao": "v51",
       "evento": "nova"
     }
   ]
