@@ -1,5 +1,5 @@
 {
-  "atual": "v72",
+  "atual": "v73",
   "versoes": [
     {
       "versao": "v1",
@@ -2483,6 +2483,73 @@
         "tokens": []
       },
       "publicada_em": "2026-11-14T18:16:57.088Z"
+    },
+    {
+      "versao": "v73",
+      "fonte_sha": "4db493ad0b4a2c4be6b0b28b1d857b9a8175cf4d",
+      "data": "2026-11-16T02:39:55.236Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v73.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "grid"
+        ],
+        "menu_itens": [
+          "grid/grid-colunas",
+          "grid/grid-escala",
+          "grid/grid-evitar",
+          "grid/grid-larguras",
+          "grid/grid-ritmo",
+          "grid/grid-tokens",
+          "grid/grid-uso",
+          "grid/grid-visao"
+        ],
+        "secoes": [
+          "Grid"
+        ],
+        "ancoras": [
+          "grid-colunas",
+          "grid-escala",
+          "grid-evitar",
+          "grid-larguras",
+          "grid-ritmo",
+          "grid-tokens",
+          "grid-uso",
+          "grid-visao"
+        ],
+        "componentes": [],
+        "tokens": [
+          "--content-default",
+          "--content-reading",
+          "--content-wide",
+          "--grid-columns",
+          "--grid-gutter",
+          "--grid-margin",
+          "--section-space",
+          "--section-space-hero",
+          "--space-1",
+          "--space-10",
+          "--space-12",
+          "--space-16",
+          "--space-2",
+          "--space-20",
+          "--space-24",
+          "--space-3",
+          "--space-4",
+          "--space-5",
+          "--space-6",
+          "--space-8"
+        ]
+      },
+      "publicada_em": "2026-11-16T02:39:55.236Z"
     }
   ],
   "publicacoes": [
@@ -2844,6 +2911,11 @@
     {
       "data": "2026-11-14T18:16:57.088Z",
       "versao": "v72",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-16T02:39:55.236Z",
+      "versao": "v73",
       "evento": "nova"
     }
   ]
