@@ -1,5 +1,5 @@
 {
-  "atual": "v51",
+  "atual": "v52",
   "versoes": [
     {
       "versao": "v1",
@@ -1872,6 +1872,41 @@
         ]
       },
       "publicada_em": "2026-11-16T18:36:42.593Z"
+    },
+    {
+      "versao": "v52",
+      "fonte_sha": "ff6f29f1db5fa1a4bbace69cdb2aa6aeb7a8710c",
+      "data": "2026-11-18T19:14:59.880Z",
+      "status": "publicada",
+      "inventario": "versoes/v52.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "voice"
+        ],
+        "menu_itens": [
+          "voice/escrita-estrutura",
+          "voice/escrita-exemplos",
+          "voice/escrita-inteligencia",
+          "voice/escrita-principios",
+          "voice/escrita-revisao",
+          "voice/escrita-tipos"
+        ],
+        "secoes": [
+          "Voice"
+        ],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-18T19:14:59.880Z"
     }
   ],
   "publicacoes": [
@@ -2128,6 +2163,11 @@
     {
       "data": "2026-11-16T18:36:42.593Z",
       "versao": "v51",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-18T19:14:59.880Z",
+      "versao": "v52",
       "evento": "nova"
     }
   ]
