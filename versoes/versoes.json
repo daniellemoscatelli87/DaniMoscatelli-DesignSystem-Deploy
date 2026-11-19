@@ -1,5 +1,5 @@
 {
-  "atual": "v52",
+  "atual": "v53",
   "versoes": [
     {
       "versao": "v1",
@@ -1907,6 +1907,50 @@
         "tokens": []
       },
       "publicada_em": "2026-11-18T19:14:59.880Z"
+    },
+    {
+      "versao": "v53",
+      "fonte_sha": "5d0b8a0bb8cf67a4de8c36c35f886cfc4c2acc93",
+      "data": "2026-11-19T04:21:00.747Z",
+      "status": "publicada",
+      "inventario": "versoes/v53.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "backgrounds/canvas-reveal-bg",
+          "badges/timeline",
+          "colors/spacing",
+          "data/kpi-cards",
+          "motion/shine-border",
+          "motion/tokens",
+          "motion/wobble-card"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "timeline"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "catalogo"
+        ],
+        "menu_itens": [
+          "catalogo/catalogo-lista",
+          "motion/motion-tokens"
+        ],
+        "secoes": [
+          "Catalogo"
+        ],
+        "ancoras": [
+          "catalogo-lista",
+          "rotulos-timeline"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-19T04:21:00.747Z"
     }
   ],
   "publicacoes": [
@@ -2168,6 +2212,11 @@
     {
       "data": "2026-11-18T19:14:59.880Z",
       "versao": "v52",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-19T04:21:00.747Z",
+      "versao": "v53",
       "evento": "nova"
     }
   ]
