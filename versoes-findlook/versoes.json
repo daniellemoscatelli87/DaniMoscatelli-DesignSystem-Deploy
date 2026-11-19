@@ -1,5 +1,5 @@
 {
-  "atual": "v82",
+  "atual": "v83",
   "versoes": [
     {
       "versao": "v1",
@@ -2860,6 +2860,39 @@
         ]
       },
       "publicada_em": "2026-11-19T05:36:58.487Z"
+    },
+    {
+      "versao": "v83",
+      "fonte_sha": "dc1913c2a98bd6fba0aa1a11c49eae3658779671",
+      "data": "2026-11-19T05:48:01.442Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v83.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": [
+          "--chart-1-texto",
+          "--chart-2-texto",
+          "--chart-4-texto",
+          "--chart-5-texto",
+          "--chart-seq-1",
+          "--chart-seq-2",
+          "--chart-seq-3",
+          "--chart-seq-4"
+        ]
+      },
+      "publicada_em": "2026-11-19T05:48:01.442Z"
     }
   ],
   "publicacoes": [
@@ -3271,6 +3304,11 @@
     {
       "data": "2026-11-19T05:36:58.487Z",
       "versao": "v82",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-19T05:48:01.442Z",
+      "versao": "v83",
       "evento": "nova"
     }
   ]
