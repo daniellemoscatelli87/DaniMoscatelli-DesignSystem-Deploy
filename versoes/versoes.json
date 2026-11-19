@@ -1,5 +1,5 @@
 {
-  "atual": "v54",
+  "atual": "v55",
   "versoes": [
     {
       "versao": "v1",
@@ -1975,6 +1975,79 @@
         "tokens": []
       },
       "publicada_em": "2026-11-19T04:35:14.948Z"
+    },
+    {
+      "versao": "v55",
+      "fonte_sha": "c6fdf7fa4b1ccf205365cb86e0dd5b4253d795f7",
+      "data": "2026-11-19T05:36:59.178Z",
+      "status": "publicada",
+      "inventario": "versoes/v55.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "graficos",
+          "site"
+        ],
+        "menu_itens": [
+          "graficos/graficos-acessibilidade",
+          "graficos/graficos-componentes",
+          "graficos/graficos-cores",
+          "graficos/graficos-escolher",
+          "graficos/graficos-inteligencia",
+          "graficos/graficos-recomendados",
+          "graficos/graficos-rosca",
+          "site/site-cookies",
+          "site/site-curvas",
+          "site/site-entrada",
+          "site/site-flutuantes",
+          "site/site-frentes",
+          "site/site-rodape"
+        ],
+        "secoes": [
+          "Graficos",
+          "SitePatterns"
+        ],
+        "ancoras": [
+          "graficos-acessibilidade",
+          "graficos-componentes",
+          "graficos-cores",
+          "graficos-escolher",
+          "graficos-inteligencia",
+          "graficos-recomendados",
+          "graficos-rosca",
+          "site-cookies",
+          "site-curvas",
+          "site-entrada",
+          "site-flutuantes",
+          "site-frentes",
+          "site-rodape"
+        ],
+        "componentes": [
+          "aviso-cookies",
+          "aviso-projeto",
+          "botao-subir",
+          "botao-whatsapp",
+          "card-frente",
+          "curva-secao",
+          "graficos-inteligencia",
+          "rodape-site",
+          "surgir-ao-rolar"
+        ],
+        "tokens": [
+          "--chart-grid",
+          "--chart-neutral",
+          "--color-chart-grid",
+          "--color-chart-neutral"
+        ]
+      },
+      "publicada_em": "2026-11-19T05:36:59.178Z"
     }
   ],
   "publicacoes": [
@@ -2246,6 +2319,11 @@
     {
       "data": "2026-11-19T04:35:14.948Z",
       "versao": "v54",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-19T05:36:59.178Z",
+      "versao": "v55",
       "evento": "nova"
     }
   ]
