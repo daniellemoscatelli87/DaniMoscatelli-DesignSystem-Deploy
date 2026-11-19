@@ -1,5 +1,5 @@
 {
-  "atual": "v79",
+  "atual": "v80",
   "versoes": [
     {
       "versao": "v1",
@@ -2723,6 +2723,51 @@
         "tokens": []
       },
       "publicada_em": "2026-11-18T19:15:09.071Z"
+    },
+    {
+      "versao": "v80",
+      "fonte_sha": "0d40e29d552b7bd2088885a1defbf5406dffaa93",
+      "data": "2026-11-19T04:21:00.752Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v80.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "backgrounds/canvas-reveal-bg",
+          "badges/timeline",
+          "colors/spacing",
+          "data/kpi-cards",
+          "data/kpi-painel",
+          "motion/shine-border",
+          "motion/tokens",
+          "motion/wobble-card"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "timeline"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "catalogo"
+        ],
+        "menu_itens": [
+          "catalogo/catalogo-lista",
+          "motion/motion-tokens"
+        ],
+        "secoes": [
+          "Catalogo"
+        ],
+        "ancoras": [
+          "catalogo-lista",
+          "rotulos-timeline"
+        ],
+        "componentes": [],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-19T04:21:00.752Z"
     }
   ],
   "publicacoes": [
@@ -3119,6 +3164,11 @@
     {
       "data": "2026-11-18T19:15:09.071Z",
       "versao": "v79",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-19T04:21:00.752Z",
+      "versao": "v80",
       "evento": "nova"
     }
   ]
