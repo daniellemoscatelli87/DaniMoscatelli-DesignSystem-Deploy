@@ -1,5 +1,5 @@
 {
-  "atual": "v81",
+  "atual": "v82",
   "versoes": [
     {
       "versao": "v1",
@@ -2792,6 +2792,74 @@
         "tokens": []
       },
       "publicada_em": "2026-11-19T04:35:10.793Z"
+    },
+    {
+      "versao": "v82",
+      "fonte_sha": "d7afd11b2e7d2f72e7da6f037cecfeb50b39bb7e",
+      "data": "2026-11-19T05:36:58.487Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v82.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "graficos",
+          "produto"
+        ],
+        "menu_itens": [
+          "data/grafico-participacao",
+          "graficos/graficos-acessibilidade",
+          "graficos/graficos-componentes",
+          "graficos/graficos-cores",
+          "graficos/graficos-escolher",
+          "graficos/graficos-inteligencia",
+          "graficos/graficos-recomendados",
+          "graficos/graficos-rosca",
+          "produto/produto-busca",
+          "produto/produto-cadastro",
+          "produto/produto-loja-mapa"
+        ],
+        "secoes": [
+          "Graficos",
+          "Produto"
+        ],
+        "ancoras": [
+          "grafico-participacao",
+          "graficos-acessibilidade",
+          "graficos-componentes",
+          "graficos-cores",
+          "graficos-escolher",
+          "graficos-inteligencia",
+          "graficos-recomendados",
+          "graficos-rosca",
+          "produto-busca",
+          "produto-cadastro",
+          "produto-loja-mapa"
+        ],
+        "componentes": [
+          "barra-fixa-celular",
+          "busca-pecas",
+          "cadastro-lojista",
+          "card-loja",
+          "faixa-parceiros",
+          "graficos-inteligencia",
+          "graficos",
+          "mapa-lojas"
+        ],
+        "tokens": [
+          "--chart-grid",
+          "--chart-neutral",
+          "--color-chart-grid",
+          "--color-chart-neutral"
+        ]
+      },
+      "publicada_em": "2026-11-19T05:36:58.487Z"
     }
   ],
   "publicacoes": [
@@ -3198,6 +3266,11 @@
     {
       "data": "2026-11-19T04:35:10.793Z",
       "versao": "v81",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-19T05:36:58.487Z",
+      "versao": "v82",
       "evento": "nova"
     }
   ]
