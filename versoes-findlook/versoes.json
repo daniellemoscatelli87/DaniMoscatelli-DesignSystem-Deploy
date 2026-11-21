@@ -1,5 +1,5 @@
 {
-  "atual": "v89",
+  "atual": "v90",
   "versoes": [
     {
       "versao": "v1",
@@ -3057,6 +3057,43 @@
         ]
       },
       "publicada_em": "2026-11-21T00:48:09.377Z"
+    },
+    {
+      "versao": "v90",
+      "fonte_sha": "9fd2a552b14ca26c97a2587e332b10143559b6b4",
+      "data": "2026-11-21T05:12:12.988Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v90.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "graficos/graficos-catalogo"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "graficos-catalogo"
+        ],
+        "componentes": [
+          "graficos-catalogo"
+        ],
+        "tokens": [
+          "--chart-6",
+          "--chart-7",
+          "--chart-8",
+          "--color-chart-6",
+          "--color-chart-7",
+          "--color-chart-8"
+        ]
+      },
+      "publicada_em": "2026-11-21T05:12:12.988Z"
     }
   ],
   "publicacoes": [
@@ -3503,6 +3540,11 @@
     {
       "data": "2026-11-21T00:48:09.377Z",
       "versao": "v89",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-21T05:12:12.988Z",
+      "versao": "v90",
       "evento": "nova"
     }
   ]
