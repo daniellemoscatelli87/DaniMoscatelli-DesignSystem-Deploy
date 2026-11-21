@@ -1,5 +1,5 @@
 {
-  "atual": "v60",
+  "atual": "v61",
   "versoes": [
     {
       "versao": "v1",
@@ -2182,6 +2182,43 @@
         ]
       },
       "publicada_em": "2026-11-21T00:48:13.545Z"
+    },
+    {
+      "versao": "v61",
+      "fonte_sha": "e334fe5111df7200188e2f33afcbc161783fc6f3",
+      "data": "2026-11-21T05:12:19.880Z",
+      "status": "publicada",
+      "inventario": "versoes/v61.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "graficos/graficos-catalogo"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "graficos-catalogo"
+        ],
+        "componentes": [
+          "graficos-catalogo"
+        ],
+        "tokens": [
+          "--chart-6",
+          "--chart-7",
+          "--chart-8",
+          "--color-chart-6",
+          "--color-chart-7",
+          "--color-chart-8"
+        ]
+      },
+      "publicada_em": "2026-11-21T05:12:19.880Z"
     }
   ],
   "publicacoes": [
@@ -2483,6 +2520,11 @@
     {
       "data": "2026-11-21T00:48:13.545Z",
       "versao": "v60",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-21T05:12:19.880Z",
+      "versao": "v61",
       "evento": "nova"
     }
   ]
