@@ -1,5 +1,5 @@
 {
-  "atual": "v92",
+  "atual": "v93",
   "versoes": [
     {
       "versao": "v1",
@@ -3155,6 +3155,43 @@
         ]
       },
       "publicada_em": "2026-11-23T08:26:10.661Z"
+    },
+    {
+      "versao": "v93",
+      "fonte_sha": "292de0145f2a7dbbab487e840d2be9ba5f5adde8",
+      "data": "2026-11-23T19:18:54.816Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v93.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "feedback/alerta-com-acao"
+        ],
+        "secoes": [
+          "AlertaComAcao"
+        ],
+        "ancoras": [],
+        "componentes": [
+          "alerta-com-acao"
+        ],
+        "tokens": [
+          "--color-error-text",
+          "--color-info-text",
+          "--color-success-text",
+          "--error-text",
+          "--info-text",
+          "--success-text"
+        ]
+      },
+      "publicada_em": "2026-11-23T19:18:54.816Z"
     }
   ],
   "publicacoes": [
@@ -3616,6 +3653,11 @@
     {
       "data": "2026-11-23T08:26:10.661Z",
       "versao": "v92",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-23T19:18:54.816Z",
+      "versao": "v93",
       "evento": "nova"
     }
   ]
