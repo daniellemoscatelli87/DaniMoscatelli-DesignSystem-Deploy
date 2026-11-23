@@ -1,5 +1,5 @@
 {
-  "atual": "v62",
+  "atual": "v63",
   "versoes": [
     {
       "versao": "v1",
@@ -2246,6 +2246,45 @@
         ]
       },
       "publicada_em": "2026-11-23T08:26:14.197Z"
+    },
+    {
+      "versao": "v63",
+      "fonte_sha": "697a76534e674235fb00dc806ca4efad8c262233",
+      "data": "2026-11-23T19:18:54.897Z",
+      "status": "publicada",
+      "inventario": "versoes/v63.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "feedback/alerta-com-acao"
+        ],
+        "secoes": [
+          "AlertaComAcao"
+        ],
+        "ancoras": [],
+        "componentes": [
+          "alerta-com-acao"
+        ],
+        "tokens": [
+          "--color-error-text",
+          "--color-info-text",
+          "--color-success-text",
+          "--color-warning-text",
+          "--error-text",
+          "--info-text",
+          "--success-text",
+          "--warning-text"
+        ]
+      },
+      "publicada_em": "2026-11-23T19:18:54.897Z"
     }
   ],
   "publicacoes": [
@@ -2557,6 +2596,11 @@
     {
       "data": "2026-11-23T08:26:14.197Z",
       "versao": "v62",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-23T19:18:54.897Z",
+      "versao": "v63",
       "evento": "nova"
     }
   ]
