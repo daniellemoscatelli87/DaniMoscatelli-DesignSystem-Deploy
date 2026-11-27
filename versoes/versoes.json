@@ -1,5 +1,5 @@
 {
-  "atual": "v66",
+  "atual": "v67",
   "versoes": [
     {
       "versao": "v1",
@@ -2367,6 +2367,46 @@
         "tokens": []
       },
       "publicada_em": "2026-11-27T13:50:53.769Z"
+    },
+    {
+      "versao": "v67",
+      "fonte_sha": "cb5847c8ec23afe3967cb6b03c171ebb59eae7f0",
+      "data": "2026-11-27T17:06:12.784Z",
+      "status": "publicada",
+      "inventario": "versoes/v67.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "feedback/alerta-sem-titulo",
+          "templates/template-painel",
+          "templates/template-painel-pecas"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "template-painel",
+          "template-painel-pecas"
+        ],
+        "componentes": [
+          "barra-de-composicao",
+          "chip-de-estado",
+          "painel-cabecalho",
+          "painel-dados",
+          "painel-shell"
+        ],
+        "tokens": [
+          "--color-primary-suave",
+          "--primary-suave"
+        ]
+      },
+      "publicada_em": "2026-11-27T17:06:12.784Z"
     }
   ],
   "publicacoes": [
@@ -2698,6 +2738,11 @@
     {
       "data": "2026-11-27T13:50:53.769Z",
       "versao": "v66",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-27T17:06:12.784Z",
+      "versao": "v67",
       "evento": "nova"
     }
   ]
