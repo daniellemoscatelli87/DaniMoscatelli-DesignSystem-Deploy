@@ -1,5 +1,5 @@
 {
-  "atual": "v98",
+  "atual": "v99",
   "versoes": [
     {
       "versao": "v1",
@@ -3360,6 +3360,128 @@
         ]
       },
       "publicada_em": "2026-11-27T19:11:01.793Z"
+    },
+    {
+      "versao": "v99",
+      "fonte_sha": "fe907b5998a2a2c84a5fad13e611f28fef1fa592",
+      "data": "2026-11-27T19:25:53.002Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v99.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "campos",
+          "chips-e-estados",
+          "demonstracoes",
+          "painel-e-admin",
+          "site"
+        ],
+        "menu_itens": [
+          "campos/botao-de-envio",
+          "campos/caixa-de-codigo",
+          "campos/campo-de-busca",
+          "campos/campo-padrao",
+          "campos/campo-texto-longo",
+          "campos/grupo-de-opcoes",
+          "campos/seletor-de-quantidade",
+          "chips-e-estados/alerta-tom",
+          "chips-e-estados/avaliacao-e-grupos",
+          "chips-e-estados/chip-de-estado",
+          "chips-e-estados/chips-filtro",
+          "chips-e-estados/estado-vazio",
+          "chips-e-estados/etiquetas-tons",
+          "demonstracoes/cursor-de-demonstracao",
+          "demonstracoes/miniatura-do-painel",
+          "demonstracoes/numero-animado",
+          "demonstracoes/surgir-ao-rolar",
+          "painel-e-admin/card-indicador-link",
+          "painel-e-admin/conversa",
+          "painel-e-admin/quadro",
+          "painel-e-admin/tabela-adaptavel",
+          "site/site-cabecalho",
+          "site/site-conta",
+          "site/site-hero",
+          "site/site-links",
+          "site/site-logo",
+          "site/site-prosa",
+          "site/site-rodape"
+        ],
+        "secoes": [
+          "Campos",
+          "ChipsEstados",
+          "Demonstracoes",
+          "PainelAdmin",
+          "Site"
+        ],
+        "ancoras": [
+          "alerta-tom",
+          "avaliacao-e-grupos",
+          "botao-de-envio",
+          "caixa-de-codigo",
+          "campo-de-busca",
+          "campo-padrao",
+          "campo-texto-longo",
+          "card-indicador-link",
+          "chip-de-estado",
+          "chips-filtro",
+          "conversa",
+          "cursor-de-demonstracao",
+          "estado-vazio",
+          "etiquetas-tons",
+          "grupo-de-opcoes",
+          "miniatura-do-painel",
+          "numero-animado",
+          "quadro",
+          "seletor-de-quantidade",
+          "site-cabecalho",
+          "site-conta",
+          "site-hero",
+          "site-links",
+          "site-logo",
+          "site-prosa",
+          "site-rodape",
+          "surgir-ao-rolar",
+          "tabela-adaptavel"
+        ],
+        "componentes": [
+          "avaliacao",
+          "botao-de-envio",
+          "cabecalho-do-site",
+          "caixa-de-codigo",
+          "campo-de-busca",
+          "campo",
+          "chip-de-estado",
+          "chip-filtravel",
+          "conversa",
+          "cursor-de-demonstracao",
+          "estado-vazio",
+          "grupo-de-opcoes",
+          "link-saiba-mais",
+          "links",
+          "lista-de-vantagens",
+          "logo",
+          "miniatura-do-painel",
+          "moldura-de-conta",
+          "numero-animado",
+          "prosa",
+          "prova-social",
+          "quadro",
+          "rodape-do-site",
+          "seletor-de-quantidade",
+          "surgir-ao-rolar",
+          "tabela-adaptavel",
+          "titulo-de-grupo"
+        ],
+        "tokens": []
+      },
+      "publicada_em": "2026-11-27T19:25:53.002Z"
     }
   ],
   "publicacoes": [
@@ -3851,6 +3973,11 @@
     {
       "data": "2026-11-27T19:11:01.793Z",
       "versao": "v98",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-27T19:25:53.002Z",
+      "versao": "v99",
       "evento": "nova"
     }
   ]
