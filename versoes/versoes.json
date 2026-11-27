@@ -1,5 +1,5 @@
 {
-  "atual": "v68",
+  "atual": "v69",
   "versoes": [
     {
       "versao": "v1",
@@ -2447,6 +2447,108 @@
         ]
       },
       "publicada_em": "2026-11-27T18:44:16.042Z"
+    },
+    {
+      "versao": "v69",
+      "fonte_sha": "d2aeb400c63137e7180b0f2240e4a1174f23a01b",
+      "data": "2026-11-27T19:01:20.098Z",
+      "status": "publicada",
+      "inventario": "versoes/v69.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [
+          "campos",
+          "molduras",
+          "pecas-admin",
+          "secoes-site"
+        ],
+        "menu_itens": [
+          "campos/campos-botoes",
+          "campos/campos-busca",
+          "campos/campos-campo",
+          "campos/campos-chips",
+          "campos/campos-emails",
+          "campos/campos-escolha",
+          "campos/campos-horario",
+          "campos/campos-tabela",
+          "molduras/molduras-alerta-tom",
+          "molduras/molduras-cabecalho",
+          "molduras/molduras-conta",
+          "molduras/molduras-estados",
+          "molduras/molduras-logo",
+          "molduras/molduras-rodape",
+          "pecas-admin/admin-agenda",
+          "pecas-admin/admin-caixa",
+          "pecas-admin/admin-conversa",
+          "pecas-admin/admin-etapas",
+          "pecas-admin/admin-quadro",
+          "secoes-site/secoes-artigos",
+          "secoes-site/secoes-citacao",
+          "secoes-site/secoes-depoimentos",
+          "secoes-site/secoes-flutuantes",
+          "secoes-site/secoes-logos",
+          "secoes-site/secoes-numeros",
+          "secoes-site/secoes-pilares",
+          "secoes-site/secoes-saiba-prosa",
+          "secoes-site/secoes-simulacao"
+        ],
+        "secoes": [
+          "Campos",
+          "Molduras",
+          "PecasAdmin",
+          "SecoesDoSite"
+        ],
+        "ancoras": [],
+        "componentes": [
+          "agenda-do-mes",
+          "barra-de-numeros",
+          "botao-de-envio",
+          "cabecalho-do-site",
+          "cadastro-em-etapas",
+          "caixa-de-entrada",
+          "campo-copiavel",
+          "campo-de-busca",
+          "campo-de-email",
+          "campo-de-emails",
+          "campo-de-horario",
+          "campo-estado-cidade",
+          "campo",
+          "card-de-artigo",
+          "card-de-depoimento",
+          "card-de-navegacao",
+          "cartao-de-escolha",
+          "cartao-flutuante",
+          "chip-filtravel",
+          "citacao",
+          "conversa",
+          "estado-vazio",
+          "faixa-de-logos",
+          "link-saiba-mais",
+          "lista-de-pilares",
+          "logo",
+          "luzes-difusas",
+          "moldura-de-conta",
+          "pilula-de-acao",
+          "prosa",
+          "quadro",
+          "simulacao",
+          "stepper",
+          "tabela-adaptavel"
+        ],
+        "tokens": [
+          "--color-sobreposicao",
+          "--radius-full",
+          "--sobreposicao"
+        ]
+      },
+      "publicada_em": "2026-11-27T19:01:20.098Z"
     }
   ],
   "publicacoes": [
@@ -2788,6 +2890,11 @@
     {
       "data": "2026-11-27T18:44:16.042Z",
       "versao": "v68",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-27T19:01:20.098Z",
+      "versao": "v69",
       "evento": "nova"
     }
   ]
