@@ -1,5 +1,5 @@
 {
-  "atual": "v67",
+  "atual": "v68",
   "versoes": [
     {
       "versao": "v1",
@@ -2407,6 +2407,46 @@
         ]
       },
       "publicada_em": "2026-11-27T17:06:12.784Z"
+    },
+    {
+      "versao": "v68",
+      "fonte_sha": "f8aa6a93370714651f87dd9f6ec18bd9a45c80c3",
+      "data": "2026-11-27T18:44:16.042Z",
+      "status": "publicada",
+      "inventario": "versoes/v68.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": [
+          "--text-body",
+          "--text-body-lg",
+          "--text-body-sm",
+          "--text-button",
+          "--text-caption",
+          "--text-display-lg",
+          "--text-display-md",
+          "--text-display-xl",
+          "--text-h1",
+          "--text-h2",
+          "--text-h3",
+          "--text-h4",
+          "--text-label",
+          "--text-subtitle",
+          "--text-subtitle-lg"
+        ]
+      },
+      "publicada_em": "2026-11-27T18:44:16.042Z"
     }
   ],
   "publicacoes": [
@@ -2743,6 +2783,11 @@
     {
       "data": "2026-11-27T17:06:12.784Z",
       "versao": "v67",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-27T18:44:16.042Z",
+      "versao": "v68",
       "evento": "nova"
     }
   ]
