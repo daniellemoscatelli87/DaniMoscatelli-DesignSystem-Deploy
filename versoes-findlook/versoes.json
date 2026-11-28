@@ -1,5 +1,5 @@
 {
-  "atual": "v101",
+  "atual": "v102",
   "versoes": [
     {
       "versao": "v1",
@@ -3563,6 +3563,42 @@
         ]
       },
       "publicada_em": "2026-11-28T01:14:43.994Z"
+    },
+    {
+      "versao": "v102",
+      "fonte_sha": "ce3e9c7addf10ca6a8c6dc89a906b54f9851f1c0",
+      "data": "2026-11-28T06:53:46.011Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v102.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "campos/caixa-de-consentimento",
+          "grid/grid-cabecalho",
+          "site/site-erro"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "grid-cabecalho",
+          "site-erro"
+        ],
+        "componentes": [
+          "caixa-de-consentimento"
+        ],
+        "tokens": [
+          "--espaco-abaixo-do-cabecalho",
+          "--radius-xs"
+        ]
+      },
+      "publicada_em": "2026-11-28T06:53:46.011Z"
     }
   ],
   "publicacoes": [
@@ -4069,6 +4105,11 @@
     {
       "data": "2026-11-28T01:14:43.994Z",
       "versao": "v101",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-28T06:53:46.011Z",
+      "versao": "v102",
       "evento": "nova"
     }
   ]
