@@ -1,5 +1,5 @@
 {
-  "atual": "v71",
+  "atual": "v72",
   "versoes": [
     {
       "versao": "v1",
@@ -2621,6 +2621,41 @@
         ]
       },
       "publicada_em": "2026-11-28T01:14:43.605Z"
+    },
+    {
+      "versao": "v72",
+      "fonte_sha": "4bbaacadbc024bc44c16977c188c023904b048e2",
+      "data": "2026-11-28T06:53:41.758Z",
+      "status": "publicada",
+      "inventario": "versoes/v72.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "campos/campos-consentimento",
+          "grid/grid-cabecalho",
+          "molduras/molduras-erro"
+        ],
+        "secoes": [],
+        "ancoras": [
+          "grid-cabecalho"
+        ],
+        "componentes": [
+          "caixa-de-consentimento"
+        ],
+        "tokens": [
+          "--espaco-abaixo-do-cabecalho",
+          "--radius-xs"
+        ]
+      },
+      "publicada_em": "2026-11-28T06:53:41.758Z"
     }
   ],
   "publicacoes": [
@@ -2977,6 +3012,11 @@
     {
       "data": "2026-11-28T01:14:43.605Z",
       "versao": "v71",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-28T06:53:41.758Z",
+      "versao": "v72",
       "evento": "nova"
     }
   ]
