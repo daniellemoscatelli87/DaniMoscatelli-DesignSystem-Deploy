@@ -1,5 +1,5 @@
 {
-  "atual": "v106",
+  "atual": "v107",
   "versoes": [
     {
       "versao": "v1",
@@ -3695,6 +3695,53 @@
         "tokens": []
       },
       "publicada_em": "2026-11-28T07:46:56.059Z"
+    },
+    {
+      "versao": "v107",
+      "fonte_sha": "68052dd36d8c8e80eb1d92d05219189a27e3cb1c",
+      "data": "2026-11-28T15:29:45.639Z",
+      "status": "publicada",
+      "inventario": "versoes-findlook/v107.json",
+      "removidos": {
+        "menu_grupos": [],
+        "menu_itens": [],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [],
+        "tokens": []
+      },
+      "adicionados": {
+        "menu_grupos": [],
+        "menu_itens": [
+          "buttons/alternador-compacto",
+          "header/header-logo-celular",
+          "site/site-botao-whatsapp",
+          "site/site-depoimentos",
+          "site/site-pilulas-destaque",
+          "site/site-redes-sociais"
+        ],
+        "secoes": [],
+        "ancoras": [],
+        "componentes": [
+          "alternador-compacto",
+          "botao-whatsapp",
+          "card-de-depoimento",
+          "link-de-rede-social",
+          "pilula-de-destaque"
+        ],
+        "tokens": [
+          "--ds-rede-cor",
+          "--marca-behance",
+          "--marca-facebook",
+          "--marca-instagram",
+          "--marca-linkedin",
+          "--marca-tiktok",
+          "--marca-whatsapp",
+          "--marca-youtube",
+          "--shadow-suave"
+        ]
+      },
+      "publicada_em": "2026-11-28T15:29:45.639Z"
     }
   ],
   "publicacoes": [
@@ -4226,6 +4273,11 @@
     {
       "data": "2026-11-28T07:46:56.059Z",
       "versao": "v106",
+      "evento": "nova"
+    },
+    {
+      "data": "2026-11-28T15:29:45.639Z",
+      "versao": "v107",
       "evento": "nova"
     }
   ]
